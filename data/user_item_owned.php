@@ -126,7 +126,7 @@ $employee->Disconnect();
 					    </div>
 					  </div>
 
-					 <div class="form-group" style="display:none">
+					 <!-- <div class="form-group" style="display:none">
 					    <label class="control-label col-sm-3" for="amount">Amount:</label>
 					    <div class="col-sm-9"> 
 					      <input type="number" step="any"  class="form-control" id="amount-transfer" placeholder="Enter Amount">
@@ -138,7 +138,7 @@ $employee->Disconnect();
 					    <div class="col-sm-9"> 
 					      <input type="date" class="form-control" id="purDate-transfer" >
 					    </div>
-								</div>
+								</div> -->
 
 					
 				   <div class="form-group" >

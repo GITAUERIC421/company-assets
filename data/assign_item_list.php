@@ -26,7 +26,7 @@ if (isset($_POST['serno'])) {
         echo '<tr>';
         $fN = $i['emp_fname'];
         $mN = $i['emp_mname'];
-        $mN = $mN[0] . '.';
+        
         $lN = $i['emp_lname'];
         $fullName = "$fN $mN $lN";
         $fullName = ucwords($fullName);
@@ -81,7 +81,7 @@ if (isset($_POST['serno'])) {
         echo '<tr>';
         $fN = $i['emp_fname'];
         $mN = $i['emp_mname'];
-        $mN = $mN[0] . '.';
+        
         $lN = $i['emp_lname'];
         $fullName = "$fN $mN $lN";
         $fullName = ucwords($fullName);

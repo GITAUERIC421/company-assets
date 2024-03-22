@@ -46,7 +46,7 @@ $conditions = $item->item_conditions();
 					    </div>
 					  </div>
 
-					  <div class="form-group">
+					  <!-- <div class="form-group">
 					    <label class="control-label col-sm-3" for="amount-update">Amount:</label>
 					    <div class="col-sm-9"> 
 					      <input type="number" step="any"  class="form-control" id="amount-update" placeholder="Enter Amount">
@@ -58,7 +58,7 @@ $conditions = $item->item_conditions();
 					    <div class="col-sm-9"> 
 					      <input type="date" class="form-control" id="purDate-update">
 					    </div>
-					  </div>	
+					  </div>	 -->
 
 					
 				    <div class="form-group">
@@ -182,7 +182,7 @@ $conditions = $item->item_conditions();
 					      <input type="text" class="form-control" id="brand-assign" placeholder="Enter Brand" readonly>
 					    </div>
 					  </div>
-
+<!-- 
 					  <div class="form-group">
 					    <label class="control-label col-sm-3" for="amount-assign">Amount:</label>
 					    <div class="col-sm-9"> 
@@ -195,7 +195,7 @@ $conditions = $item->item_conditions();
 					    <div class="col-sm-9"> 
 					      <input type="date" class="form-control" id="purDate-assign">
 					    </div>
-					  </div>	
+					  </div>	 -->
 
 					
 				    <div class="form-group">

@@ -41,8 +41,8 @@ $(document).on('submit', '#add-item-form', function(event) {
         $('#serialNumber'),
         $('#modelNumber'),
         $('#brand'),
-        $('#amount'),
-        $('#purDate'),
+     //   $('#amount'),
+      //  $('#purDate'),
         $('#empID'),
         $('#catID'),
         $('#conID')
@@ -130,8 +130,8 @@ function item_profile(iID)
 			$('.item-brand').val(event.item_brand);
 			$('.item-serial').val(event.item_serno);
 			$('.item-model').val(event.item_modno);
-			$('.item-amount').val(Number(event.item_amount).toLocaleString('en'));
-			$('.item-purchased').val(event.item_purdate);
+			//$('.item-amount').val(Number(event.item_amount).toLocaleString('en'));
+			//$('.item-purchased').val(event.item_purdate);
 			$('.item-owner').val(event.emp_fname+' '+event.emp_mname+' '+event.emp_lname);
 			$('.item-category').val(event.cat_desc);
 			$('.item-condition').val(event.con_desc);
@@ -156,8 +156,8 @@ function fill_update_modal(iID){
 				$('#serialNumber-update').val(data.item_serno);
 				$('#modelNumber-update').val(data.item_modno);
 				$('#brand-update').val(data.item_brand);
-				$('#amount-update').val(data.item_amount);
-				$('#purDate-update').val(data.item_purdate);
+			//	$('#amount-update').val(data.item_amount);
+			//	$('#purDate-update').val(data.item_purdate);
 				$('#empID-update').val(data.emp_id);
 				$('#catID-update').val(data.cat_id);
 				$('#conID-update').val(data.con_id);
@@ -183,8 +183,8 @@ function fill_assign_modal(iID){
 				$('#serialNumber-assign').val(data.item_serno);
 				$('#modelNumber-assign').val(data.item_modno);
 				$('#brand-assign').val(data.item_brand);
-				$('#amount-assign').val(data.item_amount);
-				$('#purDate-assign').val(data.item_purdate);
+			//	$('#amount-assign').val(data.item_amount);
+			//	$('#purDate-assign').val(data.item_purdate);
 				$('#empID-assign').val(data.emp_id);
 				$('#catID-assign').val(data.cat_id);
 				$('#conID-assign').val(data.con_id);
@@ -210,8 +210,8 @@ $(document).on('submit', '#assign-item-form', function (event) {
         $('input[id=serialNumber-assign]'), 
         $('input[id=modelNumber-assign]'), 
         $('input[id=brand-assign]'), 
-        $('input[id=amount-assign]'), 
-        $('input[id=purDate-assign]')
+      //  $('input[id=amount-assign]'), 
+     //   $('input[id=purDate-assign]')
     ];
 
     // Adding only input elements to the data array
@@ -233,7 +233,7 @@ $(document).on('submit', '#assign-item-form', function (event) {
     data[8] = $('#conID-assign').val();
     data[9] = $('#iID').val();
 
-    if (validate === '012345') {
+    if (validate === '0123') {
         $.ajax({
             url: '../data/update_item.php',
             type: 'post',
@@ -270,8 +270,8 @@ $(document).on('submit', '#update-item-form', function(event) {
 								$('input[id=serialNumber-update]'), 
 								$('input[id=modelNumber-update]'), 
 								$('input[id=brand-update]'), 
-								$('input[id=amount-update]'), 
-								$('input[id=purDate-update]'),
+							//	$('input[id=amount-update]'), 
+							//	$('input[id=purDate-update]'),
 								$('#empID-update'),
 								$('#catID-update'),
 								$('#conID-update'),
